@@ -1,0 +1,120 @@
+head{
+
+}
+
+div.header{
+	background: #FF837C;
+	height:150px;
+	text-align: middle;
+	
+}
+
+div.top {
+	padding-top:20px;
+    background-color: white;
+	text-align: center;
+}
+
+div.body {
+	padding-top:50px;
+    background-color: white;
+}
+
+body {
+	border-left: 0px solid black;
+	border-right:0px solid black;
+	margin-left:50px;
+	margin-right:50px;
+	max-width: 800px;
+	background-color:white;
+}
+
+img {
+	height: 100px;
+	width: 100px;	
+}
+
+ul {
+	list-style-type: none
+}
+	
+td.one{border:2px solid black}
+td.two{border:none}
+td.three
+{	border:2px solid black;
+	width:400px;
+	padding:5px
+}
+			
+table {
+    border-collapse: collapse;
+}
+	
+h1 {
+	font-family: Futura, Verdana, Segoe, sans-serif;
+	font-size: 36px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	float: center;
+	text-align: center;
+	height:100px;
+	padding: 20px;
+	color: white;
+
+	}
+h2 {
+	font-family: Futura, Verdana, Segoe, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+}
+h2.name {
+	color:#FF837C;
+}
+h3 {
+	font-family: Futura, Verdana, Segoe, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 15.3999996185303px;
+}
+h3.top {
+	color:#FF837C;
+}
+p {
+	font-family: Futura, Verdana, Segoe, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 20px;
+}
+blockquote {
+	font-family: Futura, Verdana, Segoe, sans-serif;
+	font-size: 17.5px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 25px;
+}
+pre {
+	font-family: Futura, Verdana, Segoe, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 18.5714282989502px;
+}
+
+a:link{
+	color: black;
+}
+a:visited{
+	color: black;
+}
+a:hover{
+	color: black;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<head>
+	<link rel="stylesheet" type="text/css" href= "hiperstyle_homepage.css">
+	<script>
+
+	function serverRequest(str) {
+		// Create JSON string
+		xml_str = '<Data><command>get_company_list</command><id>2</id></Data>';
+
+		if (str.length == 0) { 
+			return;
+		} else {
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function() {
+				if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+					var myArr = JSON.parse(xmlhttp.responseText);
+					var txt="";
+					for(i = 0; i<myArr.length; i++){
+						txt += myArr[i].name + "<br>" + myArr[i].info + "<br>" + myArr[i].reg_date + "<hr>";
+					}
+					document.getElementById("companies").innerHTML = txt;
+				}
+				document.getElementById("readystate").innerHTML = xmlhttp.readyState;
+				document.getElementById("status").innerHTML = xmlhttp.status;
+				document.getElementById("responseType").innerHTML = XMLHttpRequest.responseType;
+			}
+			xmlhttp.open("GET", 'http://90.225.70.16/hiper/hiper_server.php?q='+xml_str, true);
+			xmlhttp.send();
+		}	
+	}
+	</script>
+</head>
+
+<body ng-app="myApp" ng-controller="userCtrl">
+
+	<div id="grid1">
+
+		<table>
+		
+		<tr>
+			<td class="noborder">      </td>
+
+			<td class="border_right">
+				<ul class="navbar">
+					<li> <a href="login.html"><h3>LOGIN</h3></a></li>
+					<li> <a href="#contact"><h3>CONTACT</h3></a></li>
+					<li> <a href="#reference"><h3>REFERENCE</h3></a></li>
+					<li> <a href="about.html"><h3>ABOUT</h3></a></li>
+					<li> <a href="index.html"><h3>HOME</h3></a></li>
+				</ul>
+			</td>
+		</tr>
+		
+		<tr>
+		  <td class="border_left">     
+			<h1 class="name">HIPER</h1>
+		  </td>
+		 
+		  <td class="noborder">	</td>
+	 
+		 </tr>
+		 		<tr>
+			<td class="noborder">      </td>
+
+			<td class="border_right">
+			<h3> Server check </h3>
+			<button onclick="serverRequest('get_company')">Get</button>
+			<p style="padding-left 20px"> Companies: <br> <span id="companies"> </p>
+			<hr>
+			<p style="padding-left 20px"> status: <span id="status"></p>
+			<p style="padding-left 20px"> readyState: <span id="readystate"> </p>
+			<p style="padding-left 20px"> responseType: <span id="responseType"> </p>
+			
+			</td>
+		</tr>
+		
+		<tr>
+		  <td class="border_left">  
+				<img src="img/iphone.png"  width="150px">		 
+		  </td>
+		  <td class="noborder">	</td>
+	 
+		 </tr>
+		 
+		</table>
+
+	</div>
+
+
+
+</body>
+</html>

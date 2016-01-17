@@ -1,0 +1,108 @@
+body {
+
+	overflow-y: scroll;
+}
+html, body {
+height: 100%;
+margin: 0;
+}
+
+a.anchorContact {
+    display: block;
+    position: relative;
+    top: 600px;
+	
+}
+a.anchorBusinessCases {
+    display: block;
+    position: relative;
+    top: 200px;
+	
+}
+a.anchorPricing {
+    display: block;
+    position: relative;
+    top: 1200px;
+}
+a.anchorSupport {
+    display: block;
+    position: relative;
+    top: 1200px;
+}
+a.anchorBack50 {
+    display: block;
+    position: relative;
+    top: -50px;
+}
+a.anchorTermsofUse {
+    display: block;
+    position: relative;
+    top: 700px;
+}
+a.anchorPrivacyPolicy {
+    display: block;
+    position: relative;
+    top: 1000px;
+}
+a.anchorImplementation {
+    display: block;
+    position: relative;
+    top: 1000px;
+}
+a.anchorOurSolution {
+    display: block;
+    position: relative;
+    top: 700px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+h1 {
+	font-family: 'Open Sans', Verdana, Segoe, sans-serif;
+	font-size: 40px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 40px;
+	}
+
+h2 {
+	font-family: 'Open Sans', Verdana, Segoe, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+p {
+	font-family: 'Open Sans', Verdana, Segoe, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 20px;
+}
+blockquote {
+	font-family: 'Open Sans', Verdana, Segoe, sans-serif;
+	font-size: 17.5px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 25px;
+}
+pre {
+	font-family: 'Open Sans', Verdana, Segoe, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 18.5714282989502px;
+}
+
+
+
+
+
